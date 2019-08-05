@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+
+    <link rel="shortcut icon" href="svg/favicon.ico">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif+Caption&display=swap" 
+      rel="stylesheet"
+    />
+    <link
+      href="main.css" type="text/css"
+      rel="stylesheet"
+    />
+    <title>Mini Bingo</title>
+  </head>
+  <body>
+
+   
+
+    <div class="formContainer">
+      <form name="WonForm" class="Form WonForm">
+        
+        <button type="button" class="closeButton">X</button>
+        
+        <h1 class="formWonH1">
+          Tillykke du har vundet <br />
+          Bliv nævt på vores Live Feed!
+        </h1>
+        <h2 class="formWonH2">
+          Du har vundet 2 gratis bingo plader som du kan bruge i vores Bingo spil.
+        </h2>
+        <div class="leftBorder"></div>
+        <img class="pladerWon" src="svg/bingoPladerHvid.png">  
+
+        <label class="formName">
+          <input type="text" name="fornavn" placeholder="Dit navn" />
+        </label>
+        <label class="formLocation">
+          <input
+            type="text"
+            name="bynavn"
+            placeholder='Din lokation f.eks. "København"'
+          />
+        </label>
+        <label class="formSubmit">
+          <input
+            type="submit"
+            class="submitLive"
+            value="Submit"
+            name="submit"
+          />
+        </label>
+      </form>
+    </div>
+
+    <div class="formContainerSignup1">
+      <form name="Signup1" class="FormSignup Signup1">
+          <button type="button" class="closeButton1">X</button>
+        <h1 class="formSignupH1">
+          Sign Up
+        </h1>
+        <h2 class="fornavn">Fornavn</h2>
+        <label class="formFornavn">
+          <input type="text" name="fornavn" placeholder="Fornavn" />
+        </label>
+        <h2 class="efternavn">Efternavn</h2>
+        <label class="formEfternavn">
+          <input type="text" name="efternavn" placeholder="Efternavn" />
+        </label>
+
+        <p class="errormessage"></p>
+        <h2 class="email">Email</h2>
+        <label class="formEmail">
+          <input type="email" name="email" placeholder="Email" />
+        </label>
+
+        <h2 class="tlfnummer">Tlf. Nummer</h2>
+        <label class="formTlfnummer">
+          <input type="text" name="tlfnummer" placeholder="Telefon nummer" />
+        </label>
+
+        <h2 class="password">Password</h2>
+        <label class="formPassword">
+          <input type="password" name="password" placeholder="password" />
+        </label>
+
+        <p class="errormessagePass"></p>
+        <h2 class="repassword">Gentag password</h2>
+        <label class="formPasswordCheck">
+          <input
+            type="password"
+            name="reenter"
+            placeholder="gentag dit password"
+          />
+        </label>
+
+        <label class="formSignupSubmit">
+          <input type="submit" value="næste" name="submit" />
+        </label>
+      </form>
+    </div>
+
+    <div class="formContainerSignup2">
+      <form name="Signup2" class="FormSignup Signup2">
+          <button type="button" class="closeButton2">X</button>
+        <h1 class="formSignupH1">
+          Tilmeld dig
+        </h1>
+
+        <h2 class="fornavn">Cpr nummer</h2>
+        <label class="formFornavn">
+          <input type="text" name="cpr" placeholder="Cpr nummer" />
+        </label>
+
+        <h2 class="efternavn">Land</h2>
+        <label class="formEfternavn">
+          <input type="text" name="land" placeholder="Land" />
+        </label>
+
+        <h2 class="email">Bynavn</h2>
+        <label class="formEmail">
+          <input type="text" name="bynavn" placeholder="By navn" />
+        </label>
+
+        <h2 class="tlfnummer">Vej navn</h2>
+        <label class="formTlfnummer">
+          <input type="text" name="vejnavn" placeholder="Vej navn" />
+        </label>
+
+        <h2 class="password">Hus nummer</h2>
+        <label class="formPassword">
+          <input type="text" name="husnummer" placeholder="Hus nummer" />
+        </label>
+
+        <h2 class="repassword">Postnummer</h2>
+        <label class="formPasswordCheck">
+          <input type="text" name="postnummer" placeholder="Post nummer" />
+        </label>
+
+        <label class="formSignupSubmit">
+          <input type="submit" value="Tilmeld" name="submit" />
+        </label>
+      </form>
+    </div>
+
+    <div class="content">
+      <div class="index">
+        <h1 class="header">
+          
+          <img
+           class="bingoLogo"
+            src="svg/minibingo-hvid.svg"
+            alt="Bingo Logo"
+          />
+          
+          <img class="bingoLogo2" src="svg/bingo-hvid.svg" alt="Bingo Logo" />
+        
+          <img
+            class="danskespilLogo"
+            src="svg/danskespilLogo.svg"
+            alt="Dasnkespil Logo"
+          />      
+          </h1>
+        </h1>
+
+        <div id="liveFeed">
+          <div class="liveHeader">
+            <h1>Live vindere</h1>
+          </div>
+          <div class="liveContainer">Loading...</div>
+        </div>
+
+        <div class="bingoSpil">
+          <div class="bgColor"></div>
+          <div class="table"></div>
+          <div class="miniBingo">
+            <img src="svg/minibingo.svg" alt="miniBingo" />
+            <img src="svg/bingoLogo.svg" alt="Bingo Logo" />
+          </div>
+
+          <img
+            class="bingoWheel"
+            src="svg/BingoMachine.svg"
+            alt="Bingo Machine"
+          />
+
+          <div class=" bingoRolls">
+            <p class="no1"></p>
+
+            <p class="no2"></p>
+            <p class="no3"></p>
+            <p class="no4"></p>
+          </div>
+
+          <button class="startButton">Start bingo</button>
+
+          <div class="myRolls">
+            <p class="no5">
+              -
+            </p>
+            <p class="no6">
+              -
+            </p>
+            <p class="no7">
+              -
+            </p>
+            <p class="no8">
+              -
+            </p>
+            <p class="empty1">X</p>
+            <p class="empty2">X</p>
+            <p class="empty3">X</p>
+            <p class="empty4">X</p>
+            <p class="empty5">X</p>
+          </div>
+        </div>
+
+        <button class="tilmeld">Tilmeld dig</button>
+        <button class="goTo">
+          <a href="https://danskespil.dk/bingo">
+            Gå til bingo
+          </a>
+        </button>
+      </div>
+
+      <template id="liveFeedTemp">
+        <div class="dataCard">
+          <div class="dataNavn"></div>
+          <div class="dataBynavn"></div>
+        </div>
+      </template>
+    </div>
+
+    <div class="chat">
+      <div class="chatContainer">
+        test
+      </div>
+      <form>
+        <label class="chatType">
+          <input type="text" name="chatPost" placeholder="" />
+        </label>
+      </form>
+    </div>
+
+    <script src="mainJS.js">
+   </script>
+  </body>
+</html>

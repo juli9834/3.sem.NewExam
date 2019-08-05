@@ -1,0 +1,673 @@
+body {
+  margin: 0;
+  background-image: url("svg/danskespilBg.svg");
+  background-size: 300px;
+  font-family: "PT Serif Caption", serif;
+}
+
+.index {
+  display: grid;
+  grid-template: 30px 60px 30px 600px 20px 60px 60px 50px /80px 200px 50px 30px 220px 100px 220px 1fr 130px;
+  height: 100%;
+}
+
+.header {
+  border-radius: 5px;
+  margin: 0;
+  grid-area: 2/5/2/9;
+  background-color: #607f15;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+}
+
+.bingoLogo {
+  height: 85%;
+  padding-top: 5px;
+  padding-left: 15px;
+  grid-area: 1/1/1/3;
+}
+
+.bingoLogo2 {
+  height: 60%;
+  padding-top: 15px;
+  padding-left: 5px;
+  grid-area: 1/2/1/2;
+}
+
+.danskespilLogo {
+  padding-top: 12px;
+  padding-left: 12px;
+  height: 60%;
+  width: 100%;
+
+  grid-area: 1/3/1/3;
+}
+
+.tilmeld {
+  grid-area: 6/5/6/5;
+}
+
+.goTo {
+  grid-area: 6/7/6/7;
+}
+
+.Form {
+  background-color: #3cbc8d;
+  margin: 0;
+  margin-top: 5em;
+  grid-area: 1/2/1/2;
+  height: 550px;
+  width: 800px;
+  margin-bottom: 2em;
+}
+
+.FormSignup {
+  border-radius: 10px;
+  background-color: #a0d323;
+  margin: 0;
+  margin-top: 5em;
+  grid-area: 1/2/1/2;
+  height: 550px;
+  width: 650px;
+  margin-bottom: 2em;
+}
+
+.WonForm {
+  display: grid;
+  grid-template: 10px 0.6fr 40px 40px 40px 0.5fr 40px 1fr / 10px 30px 1fr 30px 1fr 30px 10px;
+}
+
+.formWonH1 {
+  color: white;
+  padding-left: 50px;
+  grid-area: 2/3/2/3;
+}
+
+.formSignupH1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 0em;
+  margin: 0em;
+  grid-area: 4/4/4/7;
+}
+
+.formName {
+  text-align: center;
+
+  grid-area: 4/3/4/3;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  color: white;
+  width: 250px;
+  height: 40px;
+
+  font-size: 0.8em;
+  padding-left: 10px;
+  border: 3px solid white;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+input[type="text"]:focus {
+  border: 3px solid rgb(233, 230, 40);
+}
+
+input[type="email"] {
+  background-color: transparent;
+  color: white;
+  width: 250px;
+  height: 40px;
+  font-size: 0.8em;
+  padding-left: 10px;
+  border: 3px solid white;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+input[type="email"]:focus {
+  border: 3px solid rgb(233, 230, 40);
+}
+
+input[type="password"] {
+  background-color: transparent;
+  color: white;
+  width: 250px;
+  height: 40px;
+  font-size: 0.8em;
+  padding-left: 10px;
+  border: 3px solid white;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+input[type="password"]:focus {
+  border: 3px solid rgb(233, 230, 40);
+}
+
+.formLocation {
+  text-align: center;
+  grid-area: 6/3/6/3;
+}
+
+.formSubmit {
+  text-align: center;
+
+  grid-area: 8/3/8/3;
+}
+
+input[type="submit"] {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 40px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+.submitLive {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 40px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+  transition: 0.3s;
+}
+
+.submitLive:hover {
+  box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+.formFornavn {
+  grid-area: 7/3/7/4;
+}
+
+.fornavn {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: left;
+  grid-area: 6/3/6/5;
+}
+
+.formEfternavn {
+  grid-area: 7/6/7/7;
+}
+
+.efternavn {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: left;
+  grid-area: 6/6/6/7;
+}
+
+.formSignupSubmit {
+  text-align: center;
+  grid-area: 14/4/14/5;
+}
+
+.formEmail {
+  grid-area: 9/3/9/4;
+}
+
+.email {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: left;
+  grid-area: 8/3/8/4;
+}
+
+.formTlfnummer {
+  grid-area: 9/6/9/7;
+}
+
+.tlfnummer {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: left;
+  grid-area: 8/6/8/8;
+}
+
+.formPassword {
+  grid-area: 12/3/12/4;
+}
+
+.password {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: left;
+  grid-area: 11/3/11/4;
+}
+
+.formPasswordCheck {
+  grid-area: 12/6/12/7;
+}
+
+.repassword {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: left;
+  grid-area: 11/6/11/8;
+}
+
+.errormessage {
+  padding: 0;
+  margin: 0;
+  color: red;
+  text-align: left;
+  grid-area: 10/3/10/5;
+}
+
+.errormessagePass {
+  padding: 0;
+  margin: 0;
+  color: red;
+  text-align: left;
+  grid-area: 13/6/13/8;
+}
+
+.Signup1 {
+  font-size: 0.8em;
+  text-align: center;
+  display: grid;
+
+  grid-template: 20px 50px 10px 50px 20px 30px 60px 30px 40px 20px 30px 40px 40px 80px / 10px 40px 150px 100px 50px 100px 150px 10px 40px;
+}
+
+.Signup2 {
+  font-size: 0.8em;
+  background-color: #a0d323;
+  text-align: center;
+  display: grid;
+  grid-template: 20px 50px 10px 50px 20px 30px 60px 30px 40px 20px 30px 30px 40px 80px / 10px 40px 150px 100px 50px 100px 150px 10px 40px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="text"] {
+  font-size: 1em;
+}
+
+.formContainer {
+  background-color: rgba(0, 0, 0, 0.219);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  grid-template: 1fr/1fr 400px 1fr;
+}
+
+.formContainerSignup1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  grid-template: 1fr/1fr 1fr 1fr;
+}
+
+.formContainerSignup2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  grid-template: 1fr/1fr 1fr 1fr;
+}
+
+#liveFeed {
+  background-color: white;
+  grid-area: 4/2/7/4;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template: 50px 1fr/1fr;
+}
+
+.liveHeader {
+  color: white;
+
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #a0d323;
+  grid-area: 1/1/1/1;
+}
+
+.liveHeader h1 {
+  padding-top: 7px;
+  margin: 0;
+}
+
+.liveContainer {
+  grid-area: 2/1/2/1;
+}
+
+.dataCard {
+  background-color: rgba(255, 196, 37, 1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+  display: grid;
+  grid-template: 10px 1fr 10px/ 10px 1fr 2fr 10px;
+  height: 40px;
+  width: 96%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.dataNavn {
+  grid-area: 2/2/2/2;
+}
+
+.dataBynavn {
+  grid-area: 2/3/2/3;
+}
+
+.bingoSpil {
+  background-color: #a0d323;
+  /* background-image: url("svg/danskespilBg4.svg");
+    */
+  background-size: 400px;
+  grid-area: 4/5/4/9;
+  border-radius: 5px;
+  display: grid;
+  grid-template: 100px 100px 100px 1fr 70px 70px 70px 1fr/100px 100px 100px 100px 100px 1fr 100px 120px 100px 100px 1fr;
+}
+
+.bingoRolls {
+  grid-area: 2/2/2/6;
+  margin: 0;
+  padding: 0;
+
+  font-size: 2em;
+  text-align: center;
+  background-color: rgba(255, 196, 37, 1);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-image: url("svg/danskespilBg4.svg");
+  background-size: 200px;
+}
+
+.bingoRolls p {
+  padding: 0;
+  margin: 0;
+  padding-top: 28px;
+  background-image: url("svg/ballPlain.svg");
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+}
+
+.myRolls {
+  grid-area: 5/2/8/5;
+  background-color: rgb(247, 217, 184);
+  border: 3px #ee9e36 solid;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.myRolls p {
+  font-size: 1.4em;
+  border: 3px #ee9e36 solid;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.no6 {
+  grid-area: 2/2/2/2;
+}
+
+.no7 {
+  grid-area: 3/1/3/1;
+}
+
+.no8 {
+  grid-area: 3/3/3/3;
+}
+
+.startButton {
+  background-color: rgba(255, 196, 37, 1);
+
+  border: none;
+  text-decoration: none;
+  width: 150px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+
+  transition: 0.3s;
+  grid-area: 6/6/6/7;
+}
+
+.table {
+  background-color: rgb(94, 80, 51);
+  grid-area: 4/1/11/13;
+}
+
+.miniBingo {
+  padding-top: 20px;
+  padding-right: 20px;
+  grid-area: 1/7/1/9;
+}
+
+.bingoWheel {
+  height: 300px;
+  grid-area: 2/9/4/10;
+}
+
+.roll1 {
+  padding-left: 50px;
+  font-size: 90px;
+  text-align: center;
+
+  transform: translateX(110px) translateY(100px);
+}
+
+.tilmeld {
+  background-color: #a0d323;
+
+  border: none;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+
+  transition: 0.3s;
+}
+
+.tilmeld:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  color: rgb(78, 36, 231);
+}
+
+.bgColor {
+  background-color: #a0d323;
+  grid-area: 1/1/4/11;
+}
+
+.goTo {
+  background-color: #a0d323;
+
+  border: none;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.goTo a {
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+}
+
+.goTo a:hover {
+  text-decoration: none;
+  color: rgb(78, 36, 231);
+}
+
+.goTo:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  color: rgb(78, 36, 231);
+}
+
+.closeButton {
+  font-size: 1em;
+  color: white;
+  margin-top: 10px;
+  border-radius: 50%;
+  height: 30px;
+  padding-right: 10px;
+  background-color: #feb700;
+  border-color: #feb700;
+  grid-area: 1/6/1/6;
+}
+
+.formWonH2 {
+  grid-area: 4/5/4/5;
+  padding-left: 10%;
+  color: white;
+  font-size: 1.4em;
+}
+
+.pladerWon {
+  grid-area: 2/5/2/5;
+  height: 250px;
+  padding-left: 20%;
+}
+.leftBorder {
+  grid-area: 1/4/9/6;
+  border-left: 5px solid #329c75;
+}
+
+.closeButton1 {
+  font-size: 1em;
+  color: white;
+  margin-top: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding-right: 10px;
+  background-color: #feb700;
+  border-color: #feb700;
+  grid-area: 2/8/2/10;
+}
+
+.closeButton2 {
+  font-size: 1em;
+  color: white;
+  margin-top: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding-right: 10px;
+  background-color: #feb700;
+  border-color: #feb700;
+  grid-area: 2/8/2/10;
+}
+
+.popUp {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template: 1fr 2fr 1fr/ 1fr 700px 1fr;
+}
+
+.informPopUp {
+  grid-area: 2/2/2/2;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  background-color: #a0d323;
+  text-align: center;
+  width: 700px;
+  height: 650px;
+  display: grid;
+  grid-template: 20px 1fr 100px 0.7fr/ 1fr 350px 1fr;
+}
+
+.infoH2 {
+  grid-area: 3/2/3/2;
+  text-align: center;
+}
+
+.infoImg {
+  grid-area: 2/2/2/2;
+}
+
+.infoImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.infoButtonContainer {
+  grid-area: 4/5/4/2;
+}
+
+.infoButton {
+  margin-top: 2em;
+  margin-left: 20%;
+  grid-area: 4/2/4/2;
+  background-color: #feb700;
+  border: none;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 40px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+  transition: 0.3s;
+}
+
+.BingoButton {
+  grid-area: 4/3/4/3;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 16px;
+  padding-top: 1em;
+}
+
+.BingoButton a {
+  color: rgb(39, 39, 39);
+  cursor: pointer;
+}

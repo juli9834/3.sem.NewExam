@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254 255">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #edf4d7;
+      }
+    </style>
+  </defs>
+  <title>balllll</title>
+  <g>
+    <ellipse class="cls-1" cx="127" cy="127.5" rx="126.5" ry="127"/>
+    <path d="M575,149a126.6,126.6,0,0,1,89.09,216,126.25,126.25,0,0,1-178.18-178.9A124.9,124.9,0,0,1,575,149m0-1c-70.14,0-127,57.08-127,127.5S504.86,403,575,403s127-57.08,127-127.5S645.14,148,575,148Z" transform="translate(-448 -148)"/>
+  </g>
+</svg>
