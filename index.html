@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="shortcut icon" href="svg/favicon.ico" />
+<html lang="da">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Serif+Caption&display=swap"
-      rel="stylesheet"
-    />
-    <link href="main.css" type="text/css" rel="stylesheet" />
-    <title>Mini Bingo</title>
-  </head>
-  <body>
-    <div class="popUp">
-      <div class="informPopUp">
-        <h2 class="infoH2">
-          Spil med på Minibingo og vind 2 gratis bingo plader!
-        </h2>
-        <div class="infoImg">
-          <img src="svg/bingoPladerHvid.png" />
-        </div>
-        <button type="button" class="infoButton">Gå til MiniBingo</button>
-        <button type="button" class="BingoButton">
-          <a href="https://danskespil.dk/bingo">Gå videre til Bingo</a>
-        </button>
+<head>
+  <link rel="shortcut icon" href="svg/favicon.ico" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption&display=swap" rel="stylesheet" />
+  <link href="main.css" type="text/css" rel="stylesheet" />
+  <title>Mini Bingo</title>
+</head>
+
+<body>
+  <div class="popUp">
+    <div class="informPopUp">
+      <h2 class="infoH2">
+        Spil med på Minibingo og vind 2 gratis bingo plader!
+      </h2>
+      <div class="infoImg">
+        <img src="svg/bingoPladerHvid.png" />
       </div>
+      <button type="button" class="infoButton">Gå til MiniBingo</button>
+      <button type="button" class="BingoButton">
+        <a href="https://danskespil.dk/bingo">Gå videre til Bingo</a>
+      </button>
     </div>
-    <script>
-      let gotoButton = document.querySelector(".infoButton");
-      let gotoBingo = document.querySelector(".BingoButton");
-      gotoButton.addEventListener("click", () => {
-        window.location.href =
-          "http://tobiasjzagal.dk/exam/minibingospil/spil.html";
-      });
-      gotoBingo.addEventListener("click", () => {
-        window.location.href = "https://danskespil.dk/bingo";
-      });
-    </script>
-  </body>
+  </div>
+  <script>
+    let gotoButton = document.querySelector(".infoButton");
+    let gotoBingo = document.querySelector(".BingoButton");
+    gotoButton.addEventListener("click", () => {
+      window.location.href =
+        "spil.html";
+    });
+    gotoBingo.addEventListener("click", () => {
+      window.location.href = "https://danskespil.dk/bingo";
+    });
+  </script>
+</body>
+
 </html>

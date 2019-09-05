@@ -15,7 +15,7 @@ body {
   border-radius: 5px;
   margin: 0;
   grid-area: 2/5/2/9;
-  background-color: #607f15;
+  background-color:  #a0d323;
   display: grid;
   grid-template-columns: 100px 1fr 100px;
 }
@@ -52,10 +52,11 @@ body {
 }
 
 .Form {
+  position: absolute;
   background-color: #3cbc8d;
   margin: 0;
   margin-top: 5em;
-  grid-area: 1/2/1/2;
+  grid-area: 1/2/1/2; 
   height: 550px;
   width: 800px;
   margin-bottom: 2em;
@@ -74,7 +75,7 @@ body {
 
 .WonForm {
   display: grid;
-  grid-template: 10px 0.6fr 40px 40px 40px 0.5fr 40px 1fr / 10px 30px 1fr 30px 1fr 30px 10px;
+   grid-template: 10px 0.6fr 40px 40px 40px 0.5fr 40px 1fr / 10px 30px 1fr 30px 1fr 30px 10px; 
 }
 
 .formWonH1 {
@@ -315,7 +316,8 @@ input[type="text"] {
   display: none;
   width: 100%;
   height: 100%;
-  grid-template: 1fr/1fr 400px 1fr;
+  grid-template: 0.5fr / 0.5fr 400px 1fr;
+  transition-delay: 5s;
 }
 
 .formContainerSignup1 {
@@ -339,8 +341,8 @@ input[type="text"] {
 }
 
 #liveFeed {
-  background-color: white;
-  grid-area: 4/2/7/4;
+  background-color:  #a0d323;
+  grid-area: 4/2/5/4;
   border-radius: 5px;
 
   display: grid;
@@ -366,7 +368,7 @@ input[type="text"] {
 }
 
 .dataCard {
-  background-color: rgba(255, 196, 37, 1);
+  background-color: white;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -377,6 +379,7 @@ input[type="text"] {
   margin-left: 5px;
   margin-right: 15px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .dataNavn {
@@ -388,10 +391,8 @@ input[type="text"] {
 }
 
 .bingoSpil {
-  background-color: #a0d323;
-  /* background-image: url("svg/danskespilBg4.svg");
-    */
-  background-size: 400px;
+  background-color: white;
+  background-size: 800px;
   grid-area: 4/5/4/9;
   border-radius: 5px;
   display: grid;
@@ -402,6 +403,7 @@ input[type="text"] {
   grid-area: 2/2/2/6;
   margin: 0;
   padding: 0;
+  border-radius: 5px;
 
   font-size: 2em;
   text-align: center;
@@ -468,19 +470,14 @@ input[type="text"] {
 }
 
 .table {
-  background-color: rgb(94, 80, 51);
-  grid-area: 4/1/11/13;
+  background-color: #a0d323;
+  grid-area: 4/1/11/11;
+  border-radius: 5px;
 }
 
-.miniBingo {
-  padding-top: 20px;
-  padding-right: 20px;
-  grid-area: 1/7/1/9;
-}
-
-.bingoWheel {
+#bingoWheel {
   height: 300px;
-  grid-area: 2/9/4/10;
+  grid-area: 2/8/4/10;
 }
 
 .roll1 {
@@ -514,11 +511,11 @@ input[type="text"] {
 .bgColor {
   background-color: #a0d323;
   grid-area: 1/1/4/11;
+  border-radius: 5px;
 }
 
 .goTo {
   background-color: #a0d323;
-
   border: none;
   text-decoration: none;
   width: 200px;
@@ -671,3 +668,143 @@ input[type="text"] {
   color: rgb(39, 39, 39);
   cursor: pointer;
 }
+
+#ball2,
+#ball-4,
+#ball-8,
+#ball-16,
+#ball-20,
+#ball-28{
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-direction: alternate;
+  animation-name: bounce-l;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-l {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+} 
+
+#ball,
+#ball-3,
+#ball-7,
+#ball-12,
+#ball-22,
+#ball-27{
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-direction: alternate;
+  animation-name: bounce-k;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-k {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+} 
+
+#ball-5,
+#ball-9,
+#ball-13,
+#ball-17,
+#ball-21,
+#ball-26{
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-direction: alternate;
+  animation-name: bounce-j;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-j {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+} 
+
+#ball-6,
+#ball-10,
+#ball-14,
+#ball-18,
+#ball-23,
+#ball-25{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-direction: alternate;
+  animation-name: bounce-h;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-h {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-15px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+} 
+
+#ball-11,
+#ball-15,
+#ball-19,
+#ball-24,
+#ball1,
+#ball2{
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-direction: alternate;
+  animation-name: bounce-g;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-g {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-25px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+} 
