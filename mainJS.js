@@ -14,7 +14,6 @@ const personDataTemp = {
   land: "land"
 }
 
-const lang = `da-DK`
 
 let speakText;
 
@@ -92,7 +91,7 @@ rollButton.addEventListener("click", () => {
   let i = 0;
   let win = 0;
   rolled += 1;
-  speak(`Det første nummer er på vej`)
+  speak(`he first number is coming up`)
 
   t2.forEach((element, index) => {
     element.textContent = "-"
@@ -109,13 +108,13 @@ rollButton.addEventListener("click", () => {
     setTimeout(function () {
       t[i].textContent = bingoRolls[i]
       if (i == 0) {
-        speak(`Det første nummer er ${bingoRolls[i]}`)
+        speak(`and the first number is ${bingoRolls[i]}`)
       } else if (i == 1) {
-        speak(`andet nummer er ${bingoRolls[i]}`)
+        speak(`then we have ${bingoRolls[i]}`)
       } else if (i == 2) {
-        speak(`tredje nummer er ${bingoRolls[i]}`)
+        speak(`and then ${bingoRolls[i]}`)
       } else {
-        speak(`og det sidste nummer er ${bingoRolls[i]}`)
+        speak(`and the last number is ${bingoRolls[i]}`)
       }
       if (myRolls.includes(Number(t[i].textContent))) {
         t[i].style.backgroundColor = "#3cbc8d";
@@ -154,8 +153,10 @@ rollButton.addEventListener("click", () => {
 });
 
 function winning() {
-  speak("Du vinder")
-  modal.style.display = "grid";
+  setTimeout(function () {
+    speak("you win");
+    modal.style.display = "grid";
+  }, 1000);
 }
 
 function signUp() {
@@ -207,6 +208,10 @@ function liveDisplay(person) {
     document.querySelector(".liveContainer").appendChild(temp);
   }
 }
+
+window.addEventListener("DOMContentLoaded", function () {
+
+})
 
 form.addEventListener("submit", e => {
   e.preventDefault();
@@ -295,7 +300,7 @@ formSignup1.elements.email.addEventListener("keyup", () => {
   } else {
 
     real = false;
-    error.textContent = "*Indtast venligst en rigtig email"
+    error.textContent = "*Please enter a valid email"
     formSignup1.elements.submit.disabled = true;
   }
 
@@ -304,7 +309,7 @@ formSignup1.elements.email.addEventListener("keyup", () => {
     if (inputData == dataChecker[i].email) {
       console.log(dataChecker[i].email);
       console.log("user already exist");
-      error.textContent = "*Denne email er allerede i brug"
+      error.textContent = "*This mail is already en use"
       notSame = false;
 
       formSignup1.elements.submit.disabled = true;
@@ -356,7 +361,7 @@ formSignup1.elements.reenter.addEventListener("keyup", () => {
   } else {
     setSumitOp()
     passCheck = 0
-    error.textContent = "*Password has to match"
+    error.textContent = "*Password does not matcher"
     console.log("not true")
   }
 
@@ -428,3 +433,13 @@ infoButtonModal.addEventListener("click", () => {
   infoButtonModal.style.display = "none";
 })
 
+//load af boldt svg
+
+//function balsvg() {
+//  fetch("bolt.svg")
+//    .then(Response => Response.text())
+//    .then(svgData => {
+//      console.log("ballll loaded");
+//      document.querySelector("#ballsvg").insertAdjacentHTML("onclick", svgData);
+//    });
+//}

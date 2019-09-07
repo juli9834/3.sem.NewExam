@@ -25,20 +25,20 @@
       <button type="button" class="closeButton">X</button>
 
       <h1 class="formWonH1">
-        Tillykke du har vundet <br />
-        Bliv nævt på vores Live Feed!
+        Congratulasion you win <br />
+        Get your name on the live feed!
       </h1>
       <h2 class="formWonH2">
-        Du har vundet 2 gratis bingo plader som du kan bruge i vores Bingo spil.
+        You won 2 free bingo you can use in our Bingo game.
       </h2>
       <div class="leftBorder"></div>
       <img class="pladerWon" src="svg/bingoPladerHvid.png">
 
       <label class="formName">
-        <input type="text" name="fornavn" placeholder="Dit navn" />
+        <input type="text" name="fornavn" placeholder="First name" />
       </label>
       <label class="formLocation">
-        <input type="text" name="bynavn" placeholder='Din lokation f.eks. "København"' />
+        <input type="text" name="bynavn" placeholder='Your location f.eks. "København"' />
       </label>
       <label class="formSubmit">
         <input type="submit" class="submitLive" value="Submit" name="submit" />
@@ -52,13 +52,13 @@
       <h1 class="formSignupH1">
         Sign Up
       </h1>
-      <h2 class="fornavn">Fornavn</h2>
+      <h2 class="fornavn">First Name</h2>
       <label class="formFornavn">
-        <input type="text" name="fornavn" placeholder="Fornavn" />
+        <input type="text" name="fornavn" placeholder="First name" />
       </label>
-      <h2 class="efternavn">Efternavn</h2>
+      <h2 class="efternavn">Last name</h2>
       <label class="formEfternavn">
-        <input type="text" name="efternavn" placeholder="Efternavn" />
+        <input type="text" name="efternavn" placeholder="Last name" />
       </label>
 
       <p class="errormessage"></p>
@@ -67,9 +67,9 @@
         <input type="email" name="email" placeholder="Email" />
       </label>
 
-      <h2 class="tlfnummer">Tlf. Nummer</h2>
+      <h2 class="tlfnummer">Phone number</h2>
       <label class="formTlfnummer">
-        <input type="text" name="tlfnummer" placeholder="Telefon nummer" />
+        <input type="text" name="tlfnummer" placeholder="Phone number" />
       </label>
 
       <h2 class="password">Password</h2>
@@ -78,13 +78,13 @@
       </label>
 
       <p class="errormessagePass"></p>
-      <h2 class="repassword">Gentag password</h2>
+      <h2 class="repassword">Repeat password</h2>
       <label class="formPasswordCheck">
-        <input type="password" name="reenter" placeholder="gentag dit password" />
+        <input type="password" name="reenter" placeholder="Repeat password" />
       </label>
 
       <label class="formSignupSubmit">
-        <input type="submit" value="næste" name="submit" />
+        <input type="submit" value="next" name="submit" />
       </label>
     </form>
   </div>
@@ -93,41 +93,41 @@
     <form name="Signup2" class="FormSignup Signup2">
       <button type="button" class="closeButton2">X</button>
       <h1 class="formSignupH1">
-        Tilmeld dig
+        Sign up
       </h1>
 
-      <h2 class="fornavn">Cpr nummer</h2>
+      <h2 class="fornavn">Social Security Number</h2>
       <label class="formFornavn">
-        <input type="text" name="cpr" placeholder="Cpr nummer" />
+        <input type="text" name="cpr" placeholder="Social Security Number" />
       </label>
 
-      <h2 class="efternavn">Land</h2>
+      <h2 class="efternavn">Country</h2>
       <label class="formEfternavn">
-        <input type="text" name="land" placeholder="Land" />
+        <input type="text" name="land" placeholder="Country" />
       </label>
 
-      <h2 class="email">Bynavn</h2>
+      <h2 class="email">City name</h2>
       <label class="formEmail">
-        <input type="text" name="bynavn" placeholder="By navn" />
+        <input type="text" name="bynavn" placeholder="City name" />
       </label>
 
-      <h2 class="tlfnummer">Vej navn</h2>
+      <h2 class="tlfnummer">Street name</h2>
       <label class="formTlfnummer">
-        <input type="text" name="vejnavn" placeholder="Vej navn" />
+        <input type="text" name="vejnavn" placeholder="Street name" />
       </label>
 
-      <h2 class="password">Hus nummer</h2>
+      <h2 class="password">House number</h2>
       <label class="formPassword">
-        <input type="text" name="husnummer" placeholder="Hus nummer" />
+        <input type="text" name="husnummer" placeholder="House number" />
       </label>
 
-      <h2 class="repassword">Postnummer</h2>
+      <h2 class="repassword">Zip code</h2>
       <label class="formPasswordCheck">
-        <input type="text" name="postnummer" placeholder="Post nummer" />
+        <input type="text" name="postnummer" placeholder="Zip code" />
       </label>
 
       <label class="formSignupSubmit">
-        <input type="submit" value="Tilmeld" name="submit" />
+        <input type="submit" value="submet" name="submit" />
       </label>
     </form>
   </div>
@@ -146,7 +146,7 @@
 
       <div id="liveFeed">
         <div class="liveHeader">
-          <h1>Live vindere</h1>
+          <h1>Live winners</h1>
         </div>
         <div class="liveContainer">Loading...</div>
       </div>
@@ -156,11 +156,7 @@
         <div class="table"></div>
 
         <div id="bingoWheel"></div>
-        <!-- <img
-            class="bingoWheel"
-            src="svg/BingoMachine.svg"
-            alt="Bingo Machine"
-          /> -->
+
 
         <div class=" bingoRolls">
           <p class="no1"></p>
@@ -171,7 +167,8 @@
         </div>
 
         <button class="startButton">Start bingo</button>
-
+        <!--placering af boldt svg
+        <div id="ballsvg"></div>-->
         <div class="myRolls">
           <p class="no5">
             -
@@ -193,10 +190,10 @@
         </div>
       </div>
 
-      <button class="tilmeld">Tilmeld dig</button>
+      <button class="tilmeld">Sign up</button>
       <button class="goTo">
         <a href="https://danskespil.dk/bingo">
-          Gå til bingo
+          Go to bingo
         </a>
       </button>
     </div>

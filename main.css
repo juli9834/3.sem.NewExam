@@ -808,3 +808,25 @@ input[type="text"] {
         transform: translateY(0);
     }
 } 
+
+/*animation af boldt
+#ballsvg{
+    height: 100px;
+    width: 100px;
+}
+#bolt{
+    animation-name: pulse;
+    animation-duration: 5s;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-direction: alternate;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}*/
