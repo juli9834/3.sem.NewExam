@@ -669,6 +669,21 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.textField{
+  display: grid;
+  grid-area: 4/5/5/10;
+}
+
+.startGame,
+.firstNumber,
+.secondNumber,
+.thirdNumber,
+.lastNumber{
+  display: grid;
+  font-size: 1em;
+  display: none;
+}
+
 #ball2,
 #ball-4,
 #ball-8,

@@ -91,7 +91,7 @@ rollButton.addEventListener("click", () => {
   let i = 0;
   let win = 0;
   rolled += 1;
-  speak(`he first number is coming up`)
+  speak(`The first number is coming up`)
 
   t2.forEach((element, index) => {
     element.textContent = "-"
